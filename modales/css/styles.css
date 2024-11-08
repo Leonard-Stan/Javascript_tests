@@ -15,11 +15,14 @@
     height: 100vh;
     font-size: 16px;
   }
+
+  
+
   
   /* Botones generales */
   .btn-open-login, .btn-open-register {
     padding: 10px 20px;
-    background-color: #FF914D; /* Naranja suave */
+   background: none;
     color: #E1E8ED; /* Blanco suave */
     border: none;
     border-radius: 5px;
