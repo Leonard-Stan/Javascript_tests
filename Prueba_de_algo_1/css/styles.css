@@ -34,12 +34,22 @@ nav {
 
 /* imagen Logo */
 #logo img {
-    height: 60px;
+    height: 96px;
 }
 
 
-
-
+/* Botón de tienda*/
+.btn-shop{
+  background: none;
+  border: none;
+  font-size: 16pt;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+.btn-shop:hover{
+ color: #E77D3E;
+}
 
 
 
@@ -93,22 +103,33 @@ nav {
 }
 
 .btn-open-login, .btn-open-register {
-    padding: 10px 20px;
-   background: none;/* Naranja suave */
-    color: #E1E8ED; /* Blanco suave */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 5px;
-    transition: .5s;
+  background: none;
+  border: none;
+  font-size: 16pt;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+  margin: 20px;
   }
 
 
   .btn-open-login:hover, .btn-open-register:hover {
-    background-color: #E77D3E; /* Naranja más oscuro */
+    color: #E77D3E; /* Naranja más oscuro */
   }
-  
+
+  #login-register-btn, #register-login-btn{ 
+    background: none;
+    border: none;
+    color: #E77D3E;
+  }
+  #login-register-btn:hover, #register-login-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #login-register-btn:active, #register-login-btn:active {
+    transform: scale(0.9);
+
+    }
 
 
 

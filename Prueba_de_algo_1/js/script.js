@@ -3,10 +3,15 @@
 // Obtener elementos para el modal de registro
 const registerBtn = document.getElementById("registerBtn");
 const registerModal = document.getElementById("registerModal");
+const registerLoginBtn = document.getElementById('register-login-btn');
+
 
 // Obtener elementos para el modal de inicio de sesión (si se usa en la misma página)
 const loginBtn = document.getElementById("loginBtn");
 const loginModal = document.getElementById("loginModal");
+const loginRegisterBtn = document.getElementById("login-register-btn");
+
+
 
 // Cerrar modal de registro
 const closeButtons = document.querySelectorAll(".close");
@@ -46,6 +51,24 @@ closeButtons.forEach(button => {
     if (loginModal) loginModal.style.display = "none";
   };
 });
+
+
+//Abrir el modal de registro al hacer click en el botón de "registrarse" en el modal de inicio de sesión
+if (loginRegisterBtn) {
+  loginRegisterBtn.onclick = function() {
+    registerModal.style.display = "flex";
+    loginModal.style.display = "none";
+    };
+    }
+
+ //Abrir el modal de inicio de sesión al hacer click en el botón de "iniciar sesión" en el modal de registro
+ if (registerLoginBtn) {
+  registerLoginBtn.onclick = function() {
+    loginModal.style.display = "flex";
+    registerModal.style.display = "none";
+    };
+    }
+
 
 // Cerrar los modales al hacer clic fuera del contenido del modal
 window.onclick = function(event) {
